@@ -21,23 +21,23 @@ const BrowseCategory = () => {
 
       </div>
       
-      <div className='flex flex-wrap justify-between gap-4 p-4 mb-7'>
-        <Link href='/'>
+      <div className='flex flex-wrap justify-center gap-4 p-4 mb-7'>
+        <Link href='/' >
           <CategoryCard iconSize={35} iconColor='black' category='Phones' icon={IoPhonePortraitOutline}/>
         </Link>
-        <Link href='/'>
+        <Link href='/' >
           <CategoryCard iconSize={35} iconColor='black' category='Smart Watches' icon={IoWatchOutline}/>
         </Link>
-        <Link href='/'>
+        <Link href='/' >
           <CategoryCard iconSize={35} iconColor='black' category='Cameras' icon={IoCameraOutline}/>
         </Link>
-        <Link href='/'>
+        <Link href='/' >
           <CategoryCard iconSize={35} iconColor='black' category='Headphones' icon={IoHeadsetOutline}/>
         </Link>
-        <Link href='/'>
+        <Link href='/' >
           <CategoryCard iconSize={35} iconColor='black' category='Computers' icon={IoDesktopOutline}/>
         </Link>
-        <Link href='/'>
+        <Link href='/' >
           <CategoryCard iconSize={35} iconColor='black' category='Gaming' icon={IoGameControllerOutline}/>
         </Link>
       </div>
