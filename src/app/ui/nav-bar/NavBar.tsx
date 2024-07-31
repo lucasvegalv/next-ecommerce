@@ -1,3 +1,5 @@
+'use client'
+
 import React from "react";
 import Link from "next/link";
 import Logo from "@/app/components/Logo";
@@ -6,25 +8,42 @@ import {
   IoHeartOutline,
   IoCartOutline,
   IoPersonOutline,
+  IoCart
 } from "react-icons/io5";
+import { useState } from "react";
+import { useCart } from "@/hooks/use-cart";
 
-const NavBar = () => {
+interface NavBarProps {
+  x: () => void;
+}
+
+const NavBar = ({ x }: NavBarProps) => {
+
+  const cart = useCart();
+
   return (
-    <div className="py-5 px-5 flex justify-between items-center">
+    <div className="mx-5 py-5 px-5 flex justify-between items-center">
       <Logo />
 
-      <Link href="/">
-        <IoMenu className="sm:hidden" size={20} />
-      </Link>
+      {/* # ICONS MENU RIGHT */}
+      <div className="justify-between gap-6 flex items-center">
+        <Link href="/cart">
+          {cart.productos.length === 0 ? 
+            <IoCartOutline className="" size={20} />
+            : (
+            <div className="flex gap-2 items-center relative">
+              <IoCart className="" size={20} />
+              <span className="text-xs absolute -bottom-3 -right-2">{cart.productos.length}</span>
+  
+            </div>
+          )}
+        </Link>
 
-      {/** */}
-      <div className="hidden sm:flex sm:justify-between gap-4">
-        <Link href="/">
+        <Link href="/wishlist">
           <IoHeartOutline className="" size={20} />
         </Link>
-        <Link href="/">
-          <IoCartOutline className="" size={20} />
-        </Link>
+        
+
         <Link href="/">
           <IoPersonOutline className="" size={20} />
         </Link>

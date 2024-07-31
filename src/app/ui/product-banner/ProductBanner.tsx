@@ -13,7 +13,7 @@ const ProductBanner = () => {
           Created to change everything for the better. For everyone
         </p>
         <div className="w-full md:w-1/2 mx-auto md:mx-0 my-6 md:my-10 mt-8 md:mt-12">
-          <Link href="/" className="text-xs font-semibold py-3 px-10 border text-white border-gray-500 rounded-md hover:bg-gray-800 transition-all w-full">
+          <Link href="/products" className="text-xs font-semibold py-3 px-10 border text-white border-gray-500 rounded-md hover:bg-gray-800 transition-all w-full">
             Shop Now
           </Link>
         </div>

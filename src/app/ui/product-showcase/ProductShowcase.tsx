@@ -48,7 +48,7 @@ const ProductShowcase = () => {
             width={250}
             height={250}
             button="Shop Now"
-            btnHref="/"
+            btnHref="/products"
             style="md:h-full "
           />
         </div>
