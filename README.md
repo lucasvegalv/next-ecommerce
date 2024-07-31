@@ -1,36 +1,62 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Nombre del Proyecto
 
-## Getting Started
+Next Ecommerce
 
-First, run the development server:
+## Descripción
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Este proyecto es una aplicación de e-commerce desarrollada con Next.js y Zustand para manejar el estado del carrito de compras. Permite a los usuarios navegar por productos, agregar productos al carrito y ver el resumen del pedido.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Características
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- Ecommerce Web Responsive
+- Landing Page Shop
+- Listado de productos
+- Carrito de compras con manejo de estado usando Zustand
+- Resumen del pedido
+- Pages y Layouts
+- Rutas dinamicas
+- Navegacion y Linking
+- Conditional Rendering
+- Data Seed
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Tecnologías Utilizadas
 
-## Learn More
+- [Next.js](https://nextjs.org/)
+- [React](https://reactjs.org/)
+- [Zustand](https://github.com/pmndrs/zustand)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [TypeScript](https://www.typescriptlang.org/)
 
-To learn more about Next.js, take a look at the following resources:
+## Instalación
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Sigue estos pasos para instalar y correr el proyecto localmente:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+1. Clona el repositorio:
 
-## Deploy on Vercel
+   ```bash
+   git clone https://github.com/usuario/nombre-del-proyecto.git
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+   ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+2. Navega al directorio del proyecto:
+
+   ```bash
+   cd nombre-proyecto
+
+   ```
+
+3. Insala las dependencias:
+
+   ```bash
+    npm install
+
+   ```
+
+4. Ejecuta la aplicacion:
+
+   ```bash
+   npm run dev
+
+   ```
+
+5. Ve al navegador > 'https:localhost:3000':
