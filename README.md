@@ -1,6 +1,4 @@
-# Nombre del Proyecto
-
-Next Ecommerce
+# Next Ecommerce
 
 ## Descripción
 
