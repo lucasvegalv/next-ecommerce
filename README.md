@@ -57,4 +57,4 @@ Sigue estos pasos para instalar y correr el proyecto localmente:
 
    ```
 
-5. Ve al navegador > 'https:localhost:3000':
+5. Ve al navegador > 'http:localhost:3000':

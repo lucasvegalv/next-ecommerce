@@ -4,6 +4,7 @@ import React from "react";
 import { IoHeartOutline, IoHeartSharp } from "react-icons/io5";
 import Link from "next/link";
 import { Product } from "@/data/seed";
+import { useWishlist } from "@/hooks/use-wishlist";
 
 interface Props {
   product: Product;
@@ -11,9 +12,11 @@ interface Props {
 }
 
 const ProductShopCard = ({ product, onLikeWishlist }: Props) => {
+
+  const { addWishlistProduct, wishlistProducts } = useWishlist();
+
   const handleLike = () => {
     onLikeWishlist(product, product.onWishlist);
-    product.onWishlist = !product.onWishlist;
   };
 
   return (

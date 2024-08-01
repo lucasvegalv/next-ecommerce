@@ -4,6 +4,7 @@ import React from "react";
 import { Product, products } from "@/data/seed";
 import Link from "next/link";
 import { useCart } from "@/hooks/use-cart";
+import { useWishlist } from "@/hooks/use-wishlist";
 
 interface Props {
   params: {
@@ -17,6 +18,7 @@ const Page = ({ params }: Props) => {
   const product = products.find((product) => product.id === productId);
 
   const { addProduct, productos } = useCart();
+  const {addWishlistProduct, wishlistProducts } = useWishlist();
 
   if (!product) {
     return <div>Product not found</div>;
@@ -70,6 +72,7 @@ const Page = ({ params }: Props) => {
             <Link
               href="/products"
               className="text-center text-sm font-medium py-3 px-10 border text-black border-gray-500 rounded-md bg-white transition-all hover:bg-gray-100 lg:w-2/6"
+              onClick={() => addWishlistProduct(product)}
             >
               Add to Wishlist
             </Link>
