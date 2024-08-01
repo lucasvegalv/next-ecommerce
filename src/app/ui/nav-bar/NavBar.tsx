@@ -15,11 +15,7 @@ import { useState } from "react";
 import { useCart } from "@/hooks/use-cart";
 import { useWishlist } from "@/hooks/use-wishlist";
 
-interface NavBarProps {
-  x: () => void;
-}
-
-const NavBar = ({ x }: NavBarProps) => {
+const NavBar = () => {
   const cart = useCart();
   const wishlist = useWishlist();
 

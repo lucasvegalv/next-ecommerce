@@ -2,10 +2,9 @@
 
 import { useCart } from "@/hooks/use-cart";
 import React from "react";
-import { IoCloseOutline } from "react-icons/io5";
 import Link from "next/link";
 
-const CartProduct = () => {
+const CartProducts = () => {
   const { removeProduct } = useCart();
   const cart = useCart();
   let total = 0;
@@ -71,4 +70,4 @@ const CartProduct = () => {
   );
 };
 
-export default CartProduct;
+export default CartProducts

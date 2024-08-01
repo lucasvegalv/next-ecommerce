@@ -10,7 +10,7 @@ const WishlistProducts = () => {
   const {removeWishlistProduct } = useWishlist();
 
   return (
-    <div className='m-5'>
+    <div className='flex flex-wrap justify-center gap-5 p-4 mb-7'>
       {wishlist.wishlistProducts.map(producto => (
         <ProductShopCard 
           key={producto.id} 

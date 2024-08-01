@@ -5,7 +5,7 @@ const Wishlist = () => {
 
   return (
     <main className='m-5'>
-      <h3 className='font-bold'>Shopping Cart</h3>
+      <h3 className='font-bold'>Wishlist Products</h3>
       <WishlistProducts />
     </main>
   );

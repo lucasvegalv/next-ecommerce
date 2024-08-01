@@ -5,7 +5,7 @@ import ProductShopCard from "@/app/components/ProductShopCard";
 import { Product, products } from "@/data/seed";
 import { useWishlist } from "@/hooks/use-wishlist";
 
-const page = () => {
+const ProductIdPage = () => {
   const { addWishlistProduct, removeWishlistProduct, wishlistProducts } =
     useWishlist();
 
@@ -35,4 +35,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default ProductIdPage;
