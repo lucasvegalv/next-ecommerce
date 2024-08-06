@@ -1,8 +1,9 @@
+import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
 import React from "react";
 
 interface ProductCardProps {
-  src: string;
+  src: StaticImageData;
   title: string;
   description: string;
   width: number;
@@ -27,7 +28,7 @@ const ProductCard = ({
   return (
     <div className={`flex flex-col md:flex-row w-full m-2 ${style} p-5`}>
       <div className="w-full md:w-1/2 flex-shrink-0 flex items-center justify-center">
-        <img
+        <Image
           src={src}
           width={width}
           height={height}

@@ -1,6 +1,17 @@
+import { StaticImageData } from "next/image";
+import image1 from '@/../public/shop/product_1.webp'
+import image2 from '@/../public/shop/product_2.webp'
+import image3 from '@/../public/shop/product_3.webp'
+import image4 from '@/../public/shop/product_4.webp'
+import image5 from '@/../public/shop/product_5.webp'
+import image6 from '@/../public/shop/product_6.webp'
+import image7 from '@/../public/shop/product_7.webp'
+import image8 from '@/../public/shop/product_8.webp'
+import image9 from '@/../public/shop/product_9.webp'
+
 export interface Product {
   id: number;
-  src: string;
+  src: StaticImageData;
   alt: string;
   title: string;
   price: number;
@@ -11,7 +22,7 @@ export interface Product {
 export const products: Product[] = [
   {
     id: 1,
-    src: "https://icenter.ar/wp-content/uploads/2024/06/ip-13-usado.png",
+    src: image1,
     alt: "iPhone 14 Pro",
     title: "iPhone 14 Pro 128GB",
     price: 990,
@@ -20,7 +31,7 @@ export const products: Product[] = [
   },
   {
     id: 2,
-    src: "https://icenter.ar/wp-content/uploads/2023/06/Iphone-13-Pro.7-e1685919445305.png",
+    src: image2,
     alt: "iPhone 13 Pro 64GB",
     title: "iPhone 13 Pro 64GB",
     price: 550,
@@ -29,7 +40,7 @@ export const products: Product[] = [
   },
   {
     id: 3,
-    src: "https://icenter.ar/wp-content/uploads/2024/06/iphone-14-plus-starlight-select-202209.png",
+    src: image3,
     alt: "iPhone 14 Plus 364GB",
     title: "iPhone 14 Plus 364GB",
     price: 1490,
@@ -38,7 +49,7 @@ export const products: Product[] = [
   },
   {
     id: 4,
-    src: "https://icenter.ar/wp-content/uploads/2023/06/iphone-13-pro-max-silver-select-e1685919393409.png",
+    src: image4,
     alt: "iPhone 13 Pro Max",
     title: "iPhone 13 Pro",
     price: 550,
@@ -47,7 +58,7 @@ export const products: Product[] = [
   },
   {
     id: 5,
-    src: "https://icenter.ar/wp-content/uploads/2023/06/iphone-14-pro-1.png-e1685919794697.webp",
+    src: image5,
     alt: "iPhone 14 Pro",
     title: "iPhone 14 Pro",
     price: 499,
@@ -56,7 +67,7 @@ export const products: Product[] = [
   },
   {
     id: 6,
-    src: "https://icenter.ar/wp-content/uploads/2023/06/macbook-pro-13.png",
+    src: image6,
     alt: "MacBook Pro",
     title: "MacBook Pro",
     price: 549,
@@ -65,7 +76,7 @@ export const products: Product[] = [
   },
   {
     id: 7,
-    src: "https://icenter.ar/wp-content/uploads/2023/06/MPLV3ref_VW_PFwatch-44-alum-starlight-nc-se_VW_PF_WF_SI.png",
+    src: image7,
     alt: "Apple Watch",
     title: "Apple Watch",
     price: 3499,
@@ -74,7 +85,7 @@ export const products: Product[] = [
   },
   {
     id: 8,
-    src: "https://icenter.ar/wp-content/uploads/2023/06/Comprar-iPad-Air-Chivilcoy-e1685932767987.png",
+    src: image8,
     alt: "iPad Air",
     title: "iPad Air",
     price: 1299,
@@ -83,7 +94,7 @@ export const products: Product[] = [
   },
   {
     id: 9,
-    src: "https://icenter.ar/wp-content/uploads/2024/04/iphone-15-pro-max-silicone-case-with-magsafe-storm-blue_MT1P3_1445x.webp",
+    src: image9,
     alt: "iPhone 15 Pro Case",
     title: "iPhone Case",
     price: 399,
@@ -92,7 +103,7 @@ export const products: Product[] = [
   },
   {
     id: 10,
-    src: "https://icenter.ar/wp-content/uploads/2023/06/MPLV3ref_VW_PFwatch-44-alum-starlight-nc-se_VW_PF_WF_SI.png",
+    src: image7,
     alt: "Apple Watch",
     title: "Apple Watch",
     price: 3499,
@@ -101,7 +112,7 @@ export const products: Product[] = [
   },
   {
     id: 11,
-    src: "https://icenter.ar/wp-content/uploads/2023/06/macbook-pro-13.png",
+    src: image6,
     alt: "MacBook Pro",
     title: "MacBook Pro",
     price: 549,
@@ -110,7 +121,7 @@ export const products: Product[] = [
   },
   {
     id: 12,
-    src: "https://icenter.ar/wp-content/uploads/2023/06/iphone-14-pro-1.png-e1685919794697.webp",
+    src: image3,
     alt: "iPhone 14 Pro",
     title: "iPhone 14 Pro",
     price: 499,

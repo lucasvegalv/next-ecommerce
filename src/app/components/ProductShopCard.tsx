@@ -5,6 +5,7 @@ import { IoHeartOutline, IoHeartSharp } from "react-icons/io5";
 import Link from "next/link";
 import { Product } from "@/data/seed";
 import { useWishlist } from "@/hooks/use-wishlist";
+import Image from "next/image";
 
 interface Props {
   product: Product;
@@ -38,7 +39,7 @@ const ProductShopCard = ({ product, onLikeWishlist }: Props) => {
 
         <div className="mb-5">
           <Link href={`/products/${product.id}`} className="flex-shrink-0 w-full h-32 flex items-center justify-center mb-4">
-            <img src={product.src} alt={product.alt} className="w-full h-full object-contain" />
+            <Image src={product.src} alt={product.alt} className="w-full h-full object-contain" width={250} height={250}/>
           </Link>
           <h3 className="text-sm text-center">{product.title}</h3>
           <h4 className="font-bold text-center">${product.price}</h4>

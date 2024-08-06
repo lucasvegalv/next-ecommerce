@@ -1,5 +1,7 @@
 import React from 'react'
 import Link from 'next/link'
+import banner from '../../../../public/banner.jpeg'
+import Image from 'next/image'
 
 const ProductBanner = () => {
   return (
@@ -19,8 +21,8 @@ const ProductBanner = () => {
         </div>
       </div>
       <div className="mt-6 md:mt-0 md:w-1/2 flex justify-center">
-        <img
-          src="https://www.notebookcheck.com/uploads/tx_nbc2/AppleiPhone14Pro__1__01.JPG"
+        <Image
+          src={banner}
           alt="iPhone 14 Pro"
           className="max-w-full h-auto"
         />

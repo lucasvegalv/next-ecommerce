@@ -11,7 +11,6 @@ import {
   IoCart,
   IoHeart
 } from "react-icons/io5";
-import { useState } from "react";
 import { useCart } from "@/hooks/use-cart";
 import { useWishlist } from "@/hooks/use-wishlist";
 
@@ -51,7 +50,7 @@ const NavBar = () => {
           )}
         </Link>
 
-        <Link href="/">
+        <Link href="/profile">
           <IoPersonOutline className="" size={20} />
         </Link>
       </div>
