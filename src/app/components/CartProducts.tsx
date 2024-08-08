@@ -3,6 +3,7 @@
 import { useCart } from "@/hooks/use-cart";
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 const CartProducts = () => {
   const { removeProduct } = useCart();
@@ -24,7 +25,7 @@ const CartProducts = () => {
           >
             {/* Imagen */}
             <div className="flex-shrink-0 mb-4 md:mb-0 md:w-1/3">
-              <img
+              <Image
                 src={producto.src}
                 alt={producto.alt}
                 width={200}

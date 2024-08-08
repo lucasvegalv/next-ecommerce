@@ -1,13 +1,11 @@
 "use client";
 
-import React, { useState } from "react";
 import ProductShopCard from "@/app/components/ProductShopCard";
 import { Product, products } from "@/data/seed";
 import { useWishlist } from "@/hooks/use-wishlist";
 
 const ProductIdPage = () => {
-  const { addWishlistProduct, removeWishlistProduct, wishlistProducts } =
-    useWishlist();
+  const { addWishlistProduct, removeWishlistProduct, wishlistProducts } = useWishlist();
 
   return (
     <main className="m-5">

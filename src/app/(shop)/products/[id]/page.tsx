@@ -5,6 +5,7 @@ import { Product, products } from "@/data/seed";
 import Link from "next/link";
 import { useCart } from "@/hooks/use-cart";
 import { useWishlist } from "@/hooks/use-wishlist";
+import Image from "next/image";
 
 interface Props {
   params: {
@@ -31,7 +32,7 @@ const Page = ({ params }: Props) => {
       <div className="flex flex-col md:flex-row md:space-x-5  md:items-center">
         {/* Imagen del producto */}
         <div className="flex-1 mb-5 md:mb-0 flex justify-center">
-          <img
+          <Image
             src={product.src}
             alt={product.alt}
             className="w-full md:w-[500px] h-auto md:h-[500px] object-cover max-w-md"
